@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+        <button
+        class="menu-btn"
+        aria-label="Open navigation menu"
+        aria-controls="menu"
+        aria-expanded="false"
+        onclick="toggleMenu()">
+        =
+        </button>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main>
+        <section aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Send a Message</h2>
+            <form aria-label="Contact Form">
+                <label for="name">Name</label>
+                <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                aria-required="true">
+                <label for="email">E-mail</label>
+                <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                aria-required="true">
+                <label for="message">Message</label>
+                <textarea
+                type="message"
+                id="message"
+                name="message"
+                required
+                aria-required="true">
+            </textarea>
+            <button type="submit">
+                Send Message
+            </button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Sachin Verma</p>
+      </footer>
+</body>
+</html>
